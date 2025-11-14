@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL HABİB DABBAG - Java/Kotlin Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h4 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .info-item strong {
+            color: #667eea;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-header {
+            margin-bottom: 15px;
+        }
+
+        .company-name {
+            font-size: 1.4em;
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        .job-title {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .time-period {
+            color: #666;
+            font-style: italic;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .certification-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #764ba2;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #f8f9fa;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AL HABİB DABBAG</h1>
+            <h2>Java / Kotlin Software Engineer</h2>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:habibdabbag@gmail.com">habibdabbag@gmail.com</a></span>
+                <span>📱 +90 534 600 61 30</span>
+                <span>🌍 İstanbul, Turkey</span>
+            </div>
+            <div class="contact-info" style="margin-top: 10px;">
+                <span>💼 <a href="https://www.linkedin.com/in/habibdabbag/" target="_blank">LinkedIn</a></span>
+                <span>💻 <a href="https://github.com/alhabibdabbagh" target="_blank">GitHub</a></span>
+                <span>📝 <a href="https://medium.com/@habibdabbag" target="_blank">Medium</a></span>
+            </div>
+        </header>
+
+        <div class="content">
+            <section id="summary">
+                <h3>Professional Summary</h3>
+                <p>
+                    I am a Java Developer at Adesso Turkey, where I work on Tosla, a new-generation platform
+                    that meets the financial needs of young people, with or without bank accounts. Tosla is an
+                    innovative app that allows users to socialize and perform daily banking transactions with ease
+                    and security.
+                </p>
+                <p style="margin-top: 15px;">
+                    I graduated with a Bachelor's Degree in Computer Engineering from Sakarya University in
+                    2019, with a High Honor Certificate for my academic excellence. I have also acquired multiple
+                    certifications and publications related to Java, C#, and Git. I am skilled in Java, JavaScript, CSS,
+                    jQuery, HTML, and Hybris structures, as well as cache management and openID connect. I am
+                    passionate about learning new technologies and solving complex problems with creative
+                    solutions. My goal is to contribute to society with my expertise in Java development.
+                </p>
+            </section>
+
+            <section id="personal-info">
+                <h3>Personal Information</h3>
+                <div class="info-grid">
+                    <div class="info-item"><strong>Birth Date:</strong> 01/1997</div>
+                    <div class="info-item"><strong>Marital Status:</strong> Married</div>
+                    <div class="info-item"><strong>Driver's License:</strong> B</div>
+                    <div class="info-item"><strong>Military Service:</strong> Completed</div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h3>Education</h3>
+                <div class="experience-item">
+                    <h4>Bachelor's Degree in Computer Engineering</h4>
+                    <p><strong>Sakarya University</strong> | 2015 - 2019</p>
+                    <p style="margin-top: 10px;">Graduated with <strong>High Honor Certificate</strong></p>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h3>Work Experience</h3>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="company-name">Adesso Turkey</div>
+                        <div class="job-title">Java Developer</div>
+                        <div class="time-period">October 2022 – Present | Istanbul, Turkey (Remote)</div>
+                        <p style="margin-top: 10px;">
+                            <a href="https://www.adesso.com.tr/en/index-3.jsp" target="_blank">https://www.adesso.com.tr</a>
+                        </p>
+                    </div>
+                    <p>
+                        adesso Turkey brings inventors, engineers and designers together to create digital
+                        products, provide continuity through quality assurance and offer custom software
+                        development & IT solutions. Our group headquarters is based in Dortmund, Germany and we have over 9000
+                        colleagues working at 62 different sites around the globe.
+                    </p>
+
+                    <h4>Projects:</h4>
+
+                    <div class="project-item">
+                        <h4>1. Borenco (Electric Vehicle Management) - Outsource</h4>
+                        <p>
+                            Contributing to the development of a reliable, fast, and sustainable electric vehicle charging network,
+                            powered by 100% renewable energy, with an initial rollout of 500+ stations and plans to expand to 7,000
+                            locations.
+                        </p>
+                        <p style="margin-top: 10px;"><strong>Technologies:</strong> Java 21, Spring Boot, Maven, Lombok, Docker, PostgreSQL, Azure</p>
+                        <p style="margin-top: 10px;"><strong>Key Contributions:</strong></p>
+                        <ul>
+                            <li>Developed backend services for roles, permissions, and CRUD operations</li>
+                            <li>Implemented audit logging, ticketing, and Flyway-based database migrations</li>
+                            <li>Integrated SAP, EPDK systems, and Azure file management</li>
+                            <li>Deployed scalable solutions with Docker</li>
+                        </ul>
+                        <p style="margin-top: 10px;">
+                            <a href="https://www.borenco.com.tr/" target="_blank">https://www.borenco.com.tr/</a>
+                        </p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4>2. TOSLA (AKBANK) - Outsource</h4>
+                        <p>
+                            AkÖde, Turkey's first bank subsidiary e-money company, brings together young people on a new
+                            generation platform with its innovative Tosla application, where they can meet their financial needs.
+                            Young individuals can now download Tosla from app stores and easily start 'Tosla-ing', enabling them
+                            to socialize while performing their daily banking transactions.
+                        </p>
+                        <div class="skills-list">
+                            <span class="skill-tag">Couchbase</span>
+                            <span class="skill-tag">Cache Management</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">OpenShift</span>
+                            <span class="skill-tag">Gradle</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Apache Kafka</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Spring Framework</span>
+                        </div>
+                        <p style="margin-top: 10px;">
+                            <a href="https://tosla.com/" target="_blank">https://tosla.com/</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="company-name">Renova Consulting</div>
+                        <div class="job-title">Java SAP Commerce Cloud (Hybris)</div>
+                        <div class="time-period">June 2020 – September 2022 | Istanbul, Turkey (Remote)</div>
+                        <p style="margin-top: 10px;">
+                            <a href="https://renovaconsulting.com.tr/en/references" target="_blank">https://renovaconsulting.com.tr</a>
+                        </p>
+                    </div>
+                    <p>
+                        SAP Gold Partner providing SAP consulting, support and licensing services with team specialized 
+                        in all SAP enterprise application software solutions.
+                    </p>
+
+                    <h4>Projects:</h4>
+
+                    <div class="project-item">
+                        <h4>1. Turkcell Market Place - Outsource</h4>
+                        <p>
+                            A B2B (business-to-business) commerce project utilizing many Hybris modules, where Turkcell dealers 
+                            conduct their shopping. The project involved a complete UX transition on the storefront, with site 
+                            renewal compatible with customer-provided HTML.
+                        </p>
+                        <p style="margin-top: 10px;"><strong>Technologies:</strong> Java, JavaScript, CSS, jQuery, HTML, SAP Hybris</p>
+                        <p style="margin-top: 10px;">
+                            <a href="https://www.turkcell.com.tr/yardim/online-alisveris" target="_blank">https://www.turkcell.com.tr</a>
+                        </p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4>2. Be a Volunteer – Red Crescent Volunteers - Outsource</h4>
+                        <p>
+                            An online volunteering platform serving as a digital system where all Red Crescent (Kızılay) units 
+                            manage their volunteer processes through a single system, functioning as a social communication network.
+                            Individuals can register, receive training, participate in volunteer activities, and share experiences.
+                        </p>
+                        <p style="margin-top: 10px;"><strong>Technologies:</strong> Core Java, HSQL, Jenkins, AngularJS, SQL, Git, HTML5, CSS, SAP Hybris, JavaScript</p>
+                        <p style="margin-top: 10px;">
+                            <a href="https://gonulluol.org/" target="_blank">https://gonulluol.org/</a>
+                        </p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4>3. DU.AE - Outsource (UAE)</h4>
+                        <p>
+                            Working on delighting customers, being the employer of choice for the best talent, creating
+                            optimal value for shareholders through business excellence and innovation.
+                        </p>
+                        <p style="margin-top: 10px;"><strong>Technologies:</strong> Core Java, HSQL, Jenkins, AngularJS, SQL, Git, HTML5, CSS, SAP Hybris, JavaScript</p>
+                        <p style="margin-top: 10px;">
+                            <a href="https://www.du.ae/personal" target="_blank">https://www.du.ae/personal</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="languages">
+                <h3>Foreign Languages</h3>
+                <div class="language-item">
+                    <strong>Arabic</strong>
+                    <span>Native Language</span>
+                </div>
+                <div class="language-item">
+                    <strong>Turkish</strong>
+                    <span>Bilingual Proficiency</span>
+                </div>
+                <div class="language-item">
+                    <strong>English</strong>
+                    <span>B2 Level</span>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h3>Licenses & Certifications</h3>
+
+                <div class="certification-item">
+                    <h4>Spring Security 6 Zero to Master along with JWT, OAUTH2</h4>
+                    <p><strong>Issuing Organization:</strong> Udemy</p>
+                    <p><strong>Date:</strong> September 2023</p>
+                    <p style="margin-top: 10px;">
+                        Understanding Spring Security Architecture, important packages, interfaces, classes for authentication 
+                        and authorization. Covers CORs, CSRF, JWT, OAUTH2, password management, method level security, user, 
+                        roles & authorities management.
+                    </p>
+                </div>
+
+                <div class="certification-item">
+                    <h4>Microservices Architecture - The Complete Guide</h4>
+                    <p><strong>Issuing Organization:</strong> Udemy</p>
+                    <p><strong>Date:</strong> March 2023</p>
+                    <p style="margin-top: 10px;">
+                        Comprehensive guide to Microservices Architecture design and implementation, covering modern software 
+                        architecture patterns and best practices.
+                    </p>
+                </div>
+
+                <div class="certification-item">
+                    <h4>JavaScript</h4>
+                    <p><strong>Issuing Organization:</strong> BTK Akademi</p>
+                    <p><strong>Date:</strong> August 2021 (96 Hours)</p>
+                    <p style="margin-top: 10px;">
+                        Detailed coverage of JavaScript architecture from scratch to advanced level, including features, methods, 
+                        functions, and object-oriented programming with abundant examples.
+                    </p>
+                </div>
+
+                <div class="certification-item">
+                    <h4>İstanbul Java 101 Bootcamp</h4>
+                    <p><strong>Issuing Organization:</strong> Kodluyoruz</p>
+                    <p><strong>Date:</strong> March 2020 (3 months)</p>
+                    <p style="margin-top: 10px;">
+                        Successfully completed Java Bootcamp 101 course over 8 weeks (80 hours), covering journey from scratch 
+                        to advanced topics. Engaged in 32 projects, completed 5 assignments, 1 final project, and 9 PDF documents.
+                    </p>
+                </div>
+
+                <p style="margin-top: 20px;">
+                    <strong>More certifications available on:</strong> 
+                    <a href="https://www.linkedin.com/in/habibdabbag/" target="_blank">LinkedIn Profile</a>
+                </p>
+            </section>
+
+            <section id="projects">
+                <h3>Self Projects and Publications</h3>
+
+                <div class="project-item">
+                    <h4>AlhabibTercumanlık</h4>
+                    <p><strong>Creator:</strong> Habib Dabbağ</p>
+                    <p style="margin-top: 10px;">
+                        Website providing translation support and services.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://alhabibtercumanlik.com/" target="_blank">https://alhabibtercumanlik.com/</a>
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <h4>GIT Architecture (Publication)</h4>
+                    <p style="margin-top: 10px;">
+                        Technical article on Git Architecture published on Medium.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://medium.com/@habibdabbag/gi%CC%87tarchitecture-12e02b1dc66e" target="_blank">Read Article</a>
+                    </p>
+                </div>
+
+                <p style="margin-top: 20px;">
+                    <strong>More projects available on:</strong> 
+                    <a href="https://github.com/alhabibdabbagh" target="_blank">GitHub</a> | 
+                    <a href="https://medium.com/@habibdabbag" target="_blank">Medium</a>
+                </p>
+            </section>
+
+            <section id="volunteering">
+                <h3>Volunteering</h3>
+
+                <div class="certification-item">
+                    <h4>English Translator</h4>
+                    <p><strong>Organization:</strong> Kodluyoruz</p>
+                    <p style="margin-top: 10px;">
+                        Contributed to fully translating CS50x online course (Harvard University Professor David J. Malan's 
+                        legendary computer science course) into Turkish by dubbing, empowering local youth communities.
+                    </p>
+                </div>
+
+                <div class="certification-item">
+                    <h4>Assistant/Java Bootcamp</h4>
+                    <p><strong>Organization:</strong> Kodluyoruz</p>
+                    <p><strong>Date:</strong> October 31, 2021 – December 20, 2021</p>
+                    <p style="margin-top: 10px;">
+                        Assisted in the 70th Istanbul Java 101 Bootcamp led by instructor Batuhan Düzgün.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://verified.sertifier.com/en/verify/74969053735395/" target="_blank">Verification Certificate</a>
+                    </p>
+                </div>
+            </section>
+
+            <section id="references">
+                <h3>References</h3>
+                <p>References can be provided upon request.</p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 AL HABİB DABBAG. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:habibdabbag@gmail.com" style="color: white;">Contact Me</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
